@@ -1,0 +1,80 @@
+MatMul.cu [naive-approach]
+Time taken to initialize and fill matrices: 3252.16
+First 6 Elements of the C matrix:
+30.7802
+9.1505
+0.367534
+-24.8628
+-53.0646
+25.0282
+
+
+Seconds required for kernel: 71.1126
+FLOPS: 1.37439e+11
+GFLOPS: 1.9327
+Bytes: 2.01327e+08
+BandWidth in GB/s: 2.8311e+09
+Arithmetic Intensity: 682.667
+
+
+Coal.cu
+
+Time taken to initialize and fill matrices: 3972.83 ms
+First 6 Elements of the C matrix:
+-25.4359
+-7.40018
+15.0518
+49.1528
+-22.1777
+-8.71576
+
+Seconds required for kernel: 7.24481
+FLOPS: 1.37439e+11
+GFLOPS: 18.9707
+Bytes: 2.01327e+08
+BandWidth in GB/s: 0.0277891
+Arithmetic Intensity: 682.667
+
+
+tiledGEMM.cu
+
+Time taken to initialize and fill matrices: 3871.72 ms
+First 6 Elements of the C matrix:
+-25.4359
+-7.40018
+15.0518
+49.1528
+-22.1777
+-8.71576
+
+Seconds required for kernel: 1.46799
+FLOPS: 1.37439e+11
+GFLOPS: 93.624
+Bytes: 2.01327e+08
+BandWidth in GB/s: 0.137144
+Arithmetic Intensity: 682.667
+
+
+RegisterTiled.cu
+
+
+Time taken to initialize and fill matrices: 2415.68 ms
+-25.4359
+-7.40018
+15.0518
+49.1528
+-22.1777
+-8.71576
+
+
+Seconds required for kernel: 0.273339
+
+FLOPS: 1.37439e+11
+
+GFLOPS: 502.816
+
+Bytes: 2.01327e+08
+
+BandWidth in GB/s: 0.736546
+
+Arithmetic Intensity: 682.66
